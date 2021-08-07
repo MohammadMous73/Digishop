@@ -130,7 +130,7 @@
                         <tbody>
                             <tr>
                                 <td>{{++$row}}</td>
-                                <td><a href="">{{$post -> title}}</a></td>
+                                <td><a href="{{route('app.post.show',$post->slug)}}">{{$post -> title}}</a></td>
                                 <td>{{$post -> processormodel}}</td>
                                 <td>{{$post -> rammemory}}</td>
                                 <td>{{$post -> internalmemorycapacity}}</td>
